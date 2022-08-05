@@ -1,5 +1,4 @@
 import React from 'react'
-import notfound from "/Users/vignesh/Desktop/projects/job-app/src/assets/images/not-found.svg"
 import { useNavigate } from 'react-router-dom'
 
 
@@ -15,7 +14,7 @@ function Error() {
         <div>
 
             <div className='d-flex justify-content-center align-items-center'>
-                <img src={notfound} style={{ width: "30rem", height: "30rem" }} className="img-fluid " alt='error' ></img>
+                <img src="" style={{ width: "30rem", height: "30rem" }} className="img-fluid " alt='error' ></img>
             </div>
 
             <div className='text-center'>
