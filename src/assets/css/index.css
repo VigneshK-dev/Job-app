@@ -77,6 +77,10 @@ body {
   color: var(--textColor);
 }
 
+p {
+  margin-bottom: 1.5rem;
+  max-width: 40em;
+}
 
 h1,
 h2,

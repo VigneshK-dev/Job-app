@@ -1,38 +1,79 @@
-.App {
-  text-align: center;
+
+
+
+.heading{
+  font-weight: 700;
+  font-size: 50px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.landing{
+  margin-top: 140px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.text{
+  color: rgb(97, 103, 103);
+  line-height: 1.8;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body{
+  background-color:rgb(240,244,248)
+}
+
+.login{
+border-radius: 5px;
+box-shadow: 0px 0px 5px 1px rgb(228, 226, 226);
+}
+
+.top{
+  border-radius: 5px 5px 0px 0px ;
+}
+
+.demo{
+  border: none;
+}
+
+.error-text{
+  color: rgb(127, 131, 131);
+}
+
+/* 
+
+.jobs{
+  width: 300px;
+  height: 200px;
+  border-radius: 5px;
+  border-bottom: 5px solid rgb(242, 193, 103);
+  background-color: white;
+  padding: 2rem;
+}
+
+.job-card{
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.job-num{
+  font-size: 50px;
+  font-weight: 600;
+  color: rgb(242, 193, 103);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.job-icon{
+display: flex;
+justify-content: center;
+align-items: center;
+width: 70px;
+height: 65px;
+border-radius: 5px;
+background-color: rgb(256, 239, 201);
+}
+
+.jobs-logo{
+  font-size: 35px;
+color: rgb(242, 193, 103);
+} */
+
+.red{
+  color: rgb(136, 62, 51);
 }
