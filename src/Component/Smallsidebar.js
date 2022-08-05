@@ -1,7 +1,7 @@
 import React from 'react'
 import Wrapper from '../assets/wrappers/SmallSidebar'
 import { FaTimes} from 'react-icons/fa';
-import logo from "/Users/vignesh/Desktop/projects/job-app/src/assets/images/logo.svg"
+import logo from "../assets/images/logo.svg"
 import { useDispatch, useSelector } from 'react-redux';
 import { Togglesidebar } from '../Reducer/Reducer';
 import { Link } from 'react-router-dom';

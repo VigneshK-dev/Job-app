@@ -4,7 +4,7 @@ import { IoBarChartSharp } from 'react-icons/io5';
 import { MdQueryStats } from 'react-icons/md';
 import { ImProfile } from 'react-icons/im'
 import {  FaWpforms } from 'react-icons/fa';
-import logo from "/Users/vignesh/Desktop/projects/job-app/src/assets/images/logo.svg"
+import logo from "../assets/images/logo.svg"
 import { Link } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 

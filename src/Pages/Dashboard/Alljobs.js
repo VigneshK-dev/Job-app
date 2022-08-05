@@ -3,9 +3,9 @@ import { Alljobapi } from '../../Api/Alljobs'
 import { Spinner } from 'reactstrap'
 import Searchjobcontainer from '../../Component/Searchjobcontainer'
 import { useDispatch, useSelector } from 'react-redux'
-import { Alljob } from '../../Reducer/Reducer'
+import { Alljob , Loadingdata} from '../../Reducer/Reducer'
 import Jobcontainer from '../../Component/Jobcontainer'
-import { Loadingdata } from '../../Reducer/Reducer'
+
 
 
 

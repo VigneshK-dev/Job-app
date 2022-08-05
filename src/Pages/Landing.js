@@ -1,7 +1,7 @@
 import React from 'react'
 import { Col, Container, Row } from 'reactstrap'
-import logo from "/Users/vignesh/Desktop/projects/job-app/src/assets/images/logo.svg"
-import main from "/Users/vignesh/Desktop/projects/job-app/src/assets/images/main.svg"
+import logo from "../assets/images/logo.svg"
+import main from "../assets/images/main.svg"
 import { Link } from 'react-router-dom'
 
 function Landing() {

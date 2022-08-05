@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { Container } from 'reactstrap'
 import Inputbox from '../Component/Inputbox'
-import logo from "/Users/vignesh/Desktop/projects/job-app/src/assets/images/logo.svg"
+import logo from "../assets/images/logo.svg"
 import { toast} from 'react-toastify';
 import { RegisterApi } from '../Api/Register';
 import { LoginApi } from '../Api/Login';
