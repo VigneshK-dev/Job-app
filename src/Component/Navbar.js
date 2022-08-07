@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { FaAlignLeft, FaUserCircle, FaCaretDown } from 'react-icons/fa';
 import Wrapper from '../assets/wrappers/Navbar';
 import { useDispatch, useSelector } from 'react-redux';
-import { Togglesidebar, Userdata} from '../Reducer/Reducer';
+import { Togglesidebar, ClearState} from '../Reducer/Reducer';
 import { useNavigate } from 'react-router-dom';
 
 
@@ -20,9 +20,8 @@ function Navbar() {
         localStorage.removeItem("user")
         localStorage.removeItem("username")
         localStorage.removeItem("token")
-        Dispatch(Userdata(null))
+        Dispatch(ClearState())
         Navigate("/Register")
-        window.location.reload()
    }
 
 
