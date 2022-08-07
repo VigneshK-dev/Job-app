@@ -1,14 +1,8 @@
-import React, { useEffect} from 'react'
-import { Alljobapi } from '../../Api/Alljobs'
+import React from 'react'
 import { Spinner } from 'reactstrap'
 import Searchjobcontainer from '../../Component/Searchjobcontainer'
-import { useDispatch, useSelector } from 'react-redux'
-import { Alljob , Loadingdata} from '../../Reducer/Reducer'
+import {  useSelector } from 'react-redux'
 import Jobcontainer from '../../Component/Jobcontainer'
-
-
-
-
 
 
 
@@ -16,26 +10,7 @@ import Jobcontainer from '../../Component/Jobcontainer'
 function Alljobs() {
 
   let loading = useSelector(state => state.State.Loading)
-  const token = useSelector(state => state.State.token)
-  const dispatch = useDispatch()
 
-const Getalljobs = async () => {
-    dispatch(Loadingdata(true))
-    Alljobapi(token).then(response => {
-      if (response.status === 200) {
-        dispatch(Loadingdata(false))
-        dispatch(Alljob(response.data.jobs))
-      }
-    }).catch(err => {
-      dispatch(Loadingdata(false))
-      console.log(err)
-    })
-  }
-
-  useEffect(() => {
-    Getalljobs()
-     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [])
 
   return (
 

@@ -22,9 +22,21 @@ function Register() {
     const [loading, setloading] = useState(false)
 
 
+
+
     const navigate = useNavigate()
     const dispatch = useDispatch()
 
+  
+    const handletestuser =()=>{
+      const  testuser ={
+           email:"testUser@test.com",
+           password:"secret"
+        }
+        handleLogin(testuser)
+    }
+ 
+ 
 
     const handlechange = (e) => {
         if (login) {
@@ -144,7 +156,9 @@ function Register() {
                     </form>
 
                     <div className='mx-5 mb-3'>
-                        <button style={{ backgroundColor: "rgb(192,220,253)" }} className='btn btn-block text-primary demo'>Demo App</button>
+                        <button onClick={handletestuser} style={{ backgroundColor: "rgb(192,220,253)" }} className='btn btn-block text-primary demo'>
+                        {loading ? (<Spinner className='mb-1' style={{ width: '1.5rem', height: '1.5rem' }} />) : (<h6> Demo App</h6>) }
+                            </button>
                     </div>
 
                     <p className='text-center mb-4'>{login ? "Not a member yet?" : "Already a member?"} <span className='text-primary mx-1' style={{ cursor: 'pointer' }} onClick={() => setlogin(!login)}>{login ? "Register" : "Login"}</span></p>

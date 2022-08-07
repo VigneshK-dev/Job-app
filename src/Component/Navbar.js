@@ -20,9 +20,10 @@ function Navbar() {
         localStorage.removeItem("user")
         localStorage.removeItem("username")
         localStorage.removeItem("token")
-        Navigate("/Register")
         Dispatch(Userdata(null))
-  }
+        Navigate("/Register")
+        window.location.reload()
+   }
 
 
 

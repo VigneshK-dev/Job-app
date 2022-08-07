@@ -77,3 +77,106 @@ color: rgb(242, 193, 103);
 .red{
   color: rgb(136, 62, 51);
 }
+
+.button-container{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+}
+
+.active-page-btn{
+     background-color: rgb(37, 119, 243);
+     color: white;
+     font-weight: 500;
+     font-size:20px ;
+      border-radius : 4px;
+      border: none;
+     padding: 5px 20px;
+
+}
+
+.in-active-page-btn{
+  background-color: rgb(220, 235, 253);
+  color: rgb(37, 119, 243);
+  font-weight: 500;
+  font-size:20px ;
+   border: none;
+  padding: 5px 20px;
+
+}
+
+.in-active-page-btn:first-child{
+  border-radius : 4px;
+}
+
+.in-active-page-btn:last-child{
+  border-radius : 4px;
+}
+
+
+
+.page-btn-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(220, 235, 253);
+  border-radius : 4px;
+}
+
+.pagination-btns{
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+}
+
+.prev-btn,
+  .next-btn {
+    width: 100px;
+    height: 40px;
+    background: var(--white);
+    border-color: transparent;
+    border-radius: var(--borderRadius);
+    color: var(--primary-500);
+    text-transform: capitalize;
+    letter-spacing: var(--letterSpacing);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    cursor: pointer;
+    transition: var(--transition);
+  }
+  .prev-btn:hover,
+  .next-btn:hover {
+    background: var(--primary-500);
+    color: var(--white);
+  }
+
+@media  (max-width:720px) {
+  .in-active-page-btn ,.active-page-btn { 
+     font-size:15px ;
+    padding: 5px 15px;
+    font-weight: 400;
+  }   
+  .prev-btn,.next-btn{
+     width: 70px;
+     height:30px;
+     font-size: 12px;
+  }
+  
+}
+
+@media (max-width:530px) {
+  .in-active-page-btn ,.active-page-btn { 
+    font-size:12px ;
+   padding: 3px 12px;
+   font-weight: 400;
+ }   
+ .prev-btn,.next-btn{
+    width: 60px;
+    height:25px;
+    font-size: 10px;
+ }
+ 
+}
