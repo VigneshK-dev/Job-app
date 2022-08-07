@@ -11,14 +11,14 @@ function StatContainer() {
   const StatsCarddata = [{
     count: statsdata.pending,
     cardcolor: "#e9b949",
-    bgcolor: "fcefc7",
+    bgcolor: "#fcefc7",
     title: "Pending Applications",
     icon: <FaSuitcaseRolling />,
   },
   {
     count: statsdata.interview ,
     cardcolor: "#647acb",
-    bgcolor: "e0e8f9",
+    bgcolor: "#e0e8f9",
     title: "Interviews Scheduled",
     icon: <FaCalendarCheck />
 
@@ -26,7 +26,7 @@ function StatContainer() {
   {
     count: statsdata.declined ,
     cardcolor: "#d66a6a",
-    bgcolor: "ffeeee",
+    bgcolor: "#ffeeee",
     title: "Jobs Declined",
     icon: <FaBug />
   }
@@ -37,7 +37,7 @@ function StatContainer() {
       <Wrapper> 
 
            {StatsCarddata.map((ele,index) =>(
-                <StatsCard key={index} count = {ele.count} bg ={ele.bgcolor} color ={ele.cardcolor} icon ={ele.icon} title ={ele.title}/>
+                <StatsCard key={index} count = {ele.count} bg = {ele.bgcolor} color ={ele.cardcolor} icon ={ele.icon} title ={ele.title}/>
            ))} 
         
       </Wrapper>
