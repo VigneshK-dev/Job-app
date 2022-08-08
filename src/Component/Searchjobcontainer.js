@@ -11,6 +11,8 @@ function Searchjobcontainer() {
   
   const token = useSelector(state => state.State.token)
 
+  const deletejob = useSelector(state => state.State.Delete)
+
   const  Filterdata = useSelector(state => state.State.Filter)
 
   const {status,jobType,page,search,sort} = Filterdata
@@ -21,7 +23,7 @@ function Searchjobcontainer() {
   useEffect(()=>{
        handlefilterapi(Filterdata,token)
         // eslint-disable-next-line react-hooks/exhaustive-deps
-  },[status,jobType,page,search,sort])
+  },[status,jobType,page,search,sort,deletejob])
   
     
   const handleFilter =(e)=>{

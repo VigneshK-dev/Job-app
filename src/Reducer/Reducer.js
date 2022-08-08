@@ -9,6 +9,7 @@ const initialstate = {
     Editjob: false,
     Jobs: { Alljob: [], numofpg: 1, totaljobs: 0 },
     SingleEditjob: [],
+    Delete:0,
     token: localStorage.getItem("token"),
     Statsdata: { carddata: { pending: 0, interview: 0, declined: 0 }, graphdata: {} },
     Filter: { status: "all", jobType: "all", sort: "latest", search: "", page: 1 }
@@ -38,6 +39,8 @@ export const HandelChange = (data) => ({ type: "handlechange", payload: data })
 export const Clearfilter = (data) => ({ type: "clear", payload: data })
 
 export const HandlePagechange = (data) => ({ type: "handlepage", payload: data })
+
+export const Deletejob = () => ({ type: "delete"})
 
 export const ClearState = () => ({ type: "initialstate" })
 
@@ -129,6 +132,11 @@ export const Reducer = (state = initialstate, action) => {
                 Statsdata: resetstate.Statsdata,
                 Filter:resetstate.Filter
            }
+          case "delete":
+              return{
+                  ...state,
+                  Delete:(Math.random()*100)
+              } 
         default:
             return {
                 ...state

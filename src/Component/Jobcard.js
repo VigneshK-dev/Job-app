@@ -5,10 +5,9 @@ import { FaLocationArrow,FaCalendarAlt,FaBriefcase } from 'react-icons/fa';
 import moment from 'moment';
 import { Deletejobapi } from '../Api/Deletejob';
 import { toast } from 'react-toastify';
-import { SingleEditJob,Edit} from '../Reducer/Reducer';
-import { useDispatch } from 'react-redux';
+import { SingleEditJob,Edit,Deletejob} from '../Reducer/Reducer';
+import { useDispatch,useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
-import { useSelector } from 'react-redux';
 
 
 function Jobcard({company,position,status,date,location,jobtype,id}) {
@@ -25,11 +24,8 @@ function Jobcard({company,position,status,date,location,jobtype,id}) {
       Deletejobapi(id,token).then(response =>{
          if(response.status === 200){
         //   console.log(response)
-        toast.success(response.data.msg)
-        setTimeout(()=>{
-            window.location.reload()
-        },1200)
- 
+        toast.success(response.data.msg) 
+         dispatch(Deletejob())
          }
       }).catch(err => {
            console.log(err)
