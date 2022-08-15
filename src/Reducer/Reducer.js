@@ -34,7 +34,7 @@ export const GetToken = (data) => ({ type: "gettoken", payload: data })
 
 export const Getstats = (data) => ({ type: "stats", payload: data })
 
-export const HandelChange = (data) => ({ type: "handlechange", payload: data })
+export const HandleChange = (data) => ({ type: "handlechange", payload: data })
 
 export const Clearfilter = (data) => ({ type: "clear", payload: data })
 

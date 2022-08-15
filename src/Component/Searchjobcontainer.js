@@ -1,7 +1,7 @@
 import React, { useEffect }  from 'react'
 import {useSelector,useDispatch} from 'react-redux'
 import Wrapper from '../assets/wrappers/SearchContainer.js'
-import { Clearfilter, HandelChange } from '../Reducer/Reducer.js'
+import { Clearfilter, HandleChange } from '../Reducer/Reducer.js'
 import FormRow from './FormRow.js'
 import { FilterApi } from '../Api/Filterjob.js'
 import { Alljob } from '../Reducer/Reducer.js'
@@ -27,7 +27,7 @@ function Searchjobcontainer() {
   
     
   const handleFilter =(e)=>{
-        dispatch(HandelChange({name:e.target.id,value:e.target.value}))
+        dispatch(HandleChange({name:e.target.id,value:e.target.value}))
   }
  
 

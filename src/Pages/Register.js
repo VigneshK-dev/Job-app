@@ -100,6 +100,7 @@ function Register() {
                 localStorage.setItem("username",response.data.user.name)
                 localStorage.setItem("user",JSON.stringify(response.data.user))
                 localStorage.setItem("token",response.data.user.token)
+                dispatch(GetToken(response.data.user.token))
                 dispatch(Userdata(response.data.user))
                 toast.success(`Hello There ${response.data.user.name}`)
                 setTimeout(()=>{
